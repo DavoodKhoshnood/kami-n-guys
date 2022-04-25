@@ -1,0 +1,27 @@
+[{
+    "id": 1,
+    "make": "Kia",
+    "model": "Sportage",
+    "year": "2013",
+    "transmission": "Automatic",
+    "color": "White",
+    "image": ""
+},
+{
+    "id": 2,
+    "make": "Ford",
+    "model": "Fiesta",
+    "year": "2010",
+    "transmission": "Manual",
+    "color": "Black",
+    "image": ""
+},
+{
+    "id": 3,
+    "make": "Ford",
+    "model": "Focus",
+    "year": "2012",
+    "transmission": "Manual",
+    "color": "Silver",
+    "image": ""
+}]

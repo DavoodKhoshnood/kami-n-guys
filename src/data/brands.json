@@ -1,0 +1,46 @@
+[
+    {
+        "id":1,
+        "name":"fiat"
+    },
+    {
+        "id": 2,
+        "name":"abarth"
+    },
+    {
+        "id": 3,
+        "name":"bmw"
+    },
+    {
+        "id": 4,
+        "name":"ford"
+    },
+    {
+        "id": 5,
+        "name":"kia"
+    },
+    {
+        "id": 6,
+        "name":"mini"
+    },
+    {
+        "id": 7,
+        "name":"mercedes-benz"
+    },
+    {
+        "id": 8,
+        "name":"land-rover"
+    },
+    {
+        "id": 9,
+        "name":"audi"
+    },
+    {
+        "id": 10,
+        "name":"nissan"
+    },
+    {
+        "id": 11,
+        "name":"peugeot"
+    }
+]
