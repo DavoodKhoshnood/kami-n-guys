@@ -12,7 +12,7 @@ router.get("/", (_, res) => {
 
 
 router.get("/cars/:carsId", (req, res) => {
-	const id = req.params.lessonId;
+	const id = req.params.carsId;
 	pool
 		.query(`select * from cars where id = $1`, [id])
 		.then((result) => res.status(200).json(result.rows))
