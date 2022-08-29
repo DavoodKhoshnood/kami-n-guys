@@ -21,7 +21,7 @@ router.get("/cars/:carsId", (req, res) => {
 
 router.get("/cars", (req, res) => {
 	pool
-		.query(`select brands.name, models.title, cars.* 
+		.query(`select brands.brand, models.model, cars.* 
 				from cars 
 				inner join models on models.id = model_id
 				inner join brands on brands.id = brand_id

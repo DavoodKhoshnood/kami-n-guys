@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 const App = () => (
 	<Routes>
 		<Route path="/" element={<Home />} />
+		<Route path="/home" element={<Home />} />
 		<Route path="/about/this/site" element={<About />} />
 	</Routes>
 );

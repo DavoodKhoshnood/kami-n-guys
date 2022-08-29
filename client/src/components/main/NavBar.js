@@ -4,7 +4,7 @@ import "./navBar.css";
 const NavBar = ({ usedCars }) => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a className="navbar-brand" href="/used/index">
+			<a className="navbar-brand" href="/">
 				Kamin Guys
 			</a>
 			<button
@@ -103,7 +103,7 @@ const NavBar = ({ usedCars }) => {
 							{usedCars.map((car, index) => {
 								return (
                                     <a className="dropdown-item" href="/used/index" key={index}>
-                                        {car.name} {car.title} {car.year}
+                                        {car.brand} {car.model} {car.year}
                                     </a>
 								);
 							})}

@@ -45,7 +45,7 @@ export function Home() {
                   >
                     <option value="">Any make</option>
                     {usedCars.map((b) => (
-                      <option value={b.id}>{b.name}</option>
+                      <option value={b.id}>{b.brand}</option>
                     ))}
                   </select>
                 </div>
