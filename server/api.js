@@ -14,18 +14,35 @@ router.get("/", (_, res) => {
 router.get("/cars/:carsId", (req, res) => {
 	const id = req.params.carsId;
 	pool
-		.query(`select * from cars where id = $1`, [id])
+		.query(`select cars.* from cars where id = $1`, [id])
 		.then((result) => res.status(200).json(result.rows))
 		.catch((error) => res.status(500).json(error));
 });
 
 router.get("/cars", (req, res) => {
 	pool
-		.query(`select * from cars order by id`)
+		.query(`select brands.name, models.title, cars.* 
+				from cars 
+				inner join models on models.id = model_id
+				inner join brands on brands.id = brand_id
+				order by cars.id`)
 		.then((result) => res.status(200).json(result.rows))
 		.catch((error) => res.status(500).json(error));
 });
 
+router.get("/models", (req, res) => {
+	pool
+	.query(`select * from models`)
+	.then((result) => res.status(200).json(result.rows))
+	.catch((error) => res.status(500).json(error));
+});
+
+router.get("/brands", (req, res) => {
+	pool
+	.query(`select * from brands`)
+	.then((result) => res.status(200).json(result.rows))
+	.catch((error) => res.status(500).json(error));
+});
 
 
 export default router;
