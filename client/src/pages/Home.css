@@ -214,3 +214,26 @@
 		transform: translateX(-66.6666%);
 	  }
 	}
+
+	@media screen and (max-width:990px) {
+		.fieldset__wrapper {
+			flex-direction: column;
+		}
+		form {
+			flex-direction: column;
+			width: 80%;
+		}
+		.form-div {
+			margin-top: -440px;
+		}
+		main {
+			overflow: hidden;
+			max-width: 375px;
+			height: 360px;
+		}
+		main img {
+			max-width: initial;
+			width: 1000px;
+			text-indent: -50%;
+		}
+	}
