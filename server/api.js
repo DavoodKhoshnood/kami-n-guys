@@ -14,17 +14,18 @@ router.get("/", (_, res) => {
 router.get("/cars/:carsId", (req, res) => {
 	const id = req.params.carsId;
 	pool
-		.query(`select cars.* from cars where id = $1`, [id])
+		.query("select cars.* from cars where id = $1", [id])
 		.then((result) => res.status(200).json(result.rows))
 		.catch((error) => res.status(500).json(error));
 });
 
 router.get("/cars", (req, res) => {
 	pool
-		.query(`select brands.brand, models.model, cars.* 
+		.query(`select image, brands.brand, models.model, cars.* 
 				from cars 
 				inner join models on models.id = model_id
 				inner join brands on brands.id = brand_id
+				inner join images on car_id = cars.id
 				order by cars.id`)
 		.then((result) => res.status(200).json(result.rows))
 		.catch((error) => res.status(500).json(error));
@@ -32,14 +33,14 @@ router.get("/cars", (req, res) => {
 
 router.get("/models", (req, res) => {
 	pool
-	.query(`select * from models`)
+	.query("Select * from models")
 	.then((result) => res.status(200).json(result.rows))
 	.catch((error) => res.status(500).json(error));
 });
 
 router.get("/brands", (req, res) => {
 	pool
-	.query(`select * from brands`)
+	.query("select * from brands")
 	.then((result) => res.status(200).json(result.rows))
 	.catch((error) => res.status(500).json(error));
 });

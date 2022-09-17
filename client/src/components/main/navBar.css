@@ -50,6 +50,7 @@
   .form-div {
     z-index: 1;
     margin-top: -100px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -134,6 +135,9 @@
 @media screen and (max-width:992px) {
   .navbar {
     justify-content: space-between;
+  }
+  .dropdown-item {
+    background-color: #a1a1a1;
   }
 }
 

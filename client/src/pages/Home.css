@@ -45,11 +45,6 @@
 		  color: rgba(255, 255, 255);
 		  margin-left: 10px;
 	}
-
-	main img {
-	  width: 100%;
-	  margin-top : 96px
-	}
 	
 	.form-div {
 	  z-index: 1;
@@ -224,16 +219,11 @@
 			width: 80%;
 		}
 		.form-div {
-			margin-top: -440px;
+			margin-top: 0;
 		}
 		main {
 			overflow: hidden;
 			max-width: 375px;
 			height: 360px;
-		}
-		main img {
-			max-width: initial;
-			width: 1000px;
-			text-indent: -50%;
 		}
 	}
