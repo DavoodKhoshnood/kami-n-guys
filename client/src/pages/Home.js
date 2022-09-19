@@ -25,10 +25,10 @@ export function Home() {
 	}, []);
 
 	return (
-		<>
+		<div>
 			<NavBar usedCars = {usedCars} />
-      <Outlet />
-		</>
+			<Outlet />
+		</div>
 	);
 }
 

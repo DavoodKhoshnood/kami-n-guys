@@ -103,3 +103,6 @@
 .images-wrap>div[aria-hidden='true']{
     display:none
 }
+.img-thumbnail {
+    width: 100%;
+}

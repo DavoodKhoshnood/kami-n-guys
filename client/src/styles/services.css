@@ -1,0 +1,21 @@
+
+.main-container {
+    display: flex;
+    flex-shrink: initial;
+}
+
+.service-details {
+    background-size: 100%;
+    width: 25%;
+    height: 750px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.service-details *:hover {
+  font-size: 60px;
+}

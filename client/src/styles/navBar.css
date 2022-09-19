@@ -35,11 +35,7 @@
     border: none;
     border-radius: 0;
     z-index: 1;
-  }
-  
-  .navbar-brand{
-    font-size: 20px;
-    font-weight: bolder;
+    top: 0;
   }
   
   main img {
@@ -69,7 +65,7 @@
     padding: 0 20px 0 5px;
     margin: 0;
     color: #555;
-    background: #fff url('../../assets/theme/select-icon.svg') no-repeat; 
+    background: #fff url('../assets/theme/select-icon.svg') no-repeat; 
     background-size: 12px 12px;
     background-position: right 5px center;
     border-radius: 5px;

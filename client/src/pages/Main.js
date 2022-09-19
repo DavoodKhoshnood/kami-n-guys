@@ -1,3 +1,4 @@
+import { FormControl } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import mainImage from "../assets/img/kia.jpg";
 import Services from "../components/main/Services";
@@ -30,7 +31,7 @@ const Main = () => {
       {/* <Brands brands = { [...new Set(usedCars.map((car)=> car.brand ))] } /> */}
       <div className="form-div">
           <form method="get" action="">
-            <fieldset className="fieldset fieldset--search">
+            <FormControl >
               <div className="fieldset__wrapper">
                 <div className="form-group form-group--make">
                   <select
@@ -58,9 +59,9 @@ const Main = () => {
                   </select>
                 </div>
               </div>
-            </fieldset>
+            </FormControl>
 
-            <fieldset className="fieldset fieldset--price">
+            <FormControl >
               <div className="fieldset__wrapper">
                 <div className="budget-toggle"></div>
                 <div className="form-group form-group--budgetmax">
@@ -78,9 +79,9 @@ const Main = () => {
                   </select>
                 </div>
               </div>
-            </fieldset>
+            </FormControl>
 
-            <fieldset className="fieldset fieldset--button">
+            <FormControl >
               <div className="fieldset__wrapper">
                 {/* <!-- Button Group --> */}
                 <div className="button-group button-group--search">
@@ -94,7 +95,7 @@ const Main = () => {
                 </div>
                 {/* <!-- // Button Group --> */}
               </div>
-            </fieldset>
+            </FormControl>
           </form>
         </div>
      <Slider usedCars = {usedCars} />

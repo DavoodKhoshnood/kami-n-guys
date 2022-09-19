@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
-import { Button } from "@mui/material";
+import CarModal from "../components/Manage/CarModal.jsx";
 
 export default function Cars() {
   const [cars, setCars] = useState([]);
@@ -63,7 +63,7 @@ export default function Cars() {
     {
       field: "doors",
       headerName: "Doors",
-      width: 50,
+      width: 150,
     },
   ];
 console.log("cars",cars);
@@ -82,10 +82,9 @@ console.log("cars",cars);
   });
 
   return (
-    <div>
-    <div className="container">
-      <Button> Add </Button>
-    <Box sx={{ height: 400, width: "100%" }}>
+    <Box sx={{ display:"flex", marginTop: 20, alignItems:"center", justifyContent:"center", width: "100%" }}>
+    <Box sx={{ height: 400, width: "80%" }}>
+      <CarModal IsAdd={true} />
       <DataGrid
         rows={rows}
         columns={columns}
@@ -96,7 +95,6 @@ console.log("cars",cars);
         experimentalFeatures={{ newEditingApi: true }}
         />
     </Box>
-        </div>
-        </div>
+    </Box>
   );
 }
